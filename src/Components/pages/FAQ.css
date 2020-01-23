@@ -1,0 +1,33 @@
+.color-card {
+    background: none;
+    border: none;
+}
+
+.acc-custom {
+    background: none;
+    border: none;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #7288A2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #DDD;
+    text-decoration: none;
+}
+
+
+.acc-custom::after{
+    font-family: "Font Awesome 5 Free";
+    content: '\f358';
+    float: right;
+    color: #03B5d2;
+    transition: 0.5s ease-in;
+}
+
+
+
+.acc-custom.active::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f35b';
+    color: #03b5d2;
+    transition: 0.5s ease-in;
+}

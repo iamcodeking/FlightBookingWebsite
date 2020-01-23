@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Login.css';
+import { BrowserRouter as Router,Route,Link } from 'react-router-dom';
 
 export default class SignUp extends Component {
     render() {
@@ -26,7 +27,7 @@ export default class SignUp extends Component {
                         </label>
                         <button className='sub-but' type='button'>Sign Up</button>
                         <p className='forgot'>Already a member?</p>
-                        <button className='signup-but' type='button'>Sign In</button>
+                        <Link to='/login'><button className='signup-but'>Sign In</button></Link>
                         <br/><br/><br/>
                     </div>
                 </div>

@@ -10,7 +10,13 @@ class Faq extends Component {
         return (
             <div className='container-fluid bg-light'>
                 <div className='container'>
-                    <br /><br /><br />
+                    <br /><br />
+                    <div className='container cust-helper'>
+                        Continue scrolling to read more.<br/>
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                    </div>
+                    <br/>
+                    <br />
                     <h2>Frequently Asked Questions</h2>
                     <br />
                     <Accordion>

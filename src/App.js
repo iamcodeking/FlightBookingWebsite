@@ -11,7 +11,7 @@ import Login from './Components/pages/Login';
 import SignUp from './Components/pages/SignUp';
 import Hotels from './Components/pages/Hotels';
 import ContactUs from './Components/pages/ContactUs';
-
+import Result from './Components/pages/Result';
 class App extends Component {
 
   render() {
@@ -24,6 +24,7 @@ class App extends Component {
           <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={SignUp} />
           <Route exact path='/contactus' component={ContactUs} />
+          <Route exact path='/result' component={Result} />
         </Router>
         {/* <ButtonGroup /> */}
         <Faq />

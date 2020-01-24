@@ -14,11 +14,8 @@
     width: 100%;
     background-size: cover;
 }
-
-.to {
-    font-size: larger;
-    font-weight: 800;
-    font-family: sans-serif;
+#table-div {
+    height: 45vh;
 }
 
 #form-div {

@@ -13,7 +13,7 @@ class Faq extends Component {
                     <br /><br />
                     <div className='container cust-helper'>
                         Continue scrolling to read more.<br/>
-                        <i class="far fa-arrow-alt-circle-down"></i>
+                        <i className="far fa-arrow-alt-circle-down"></i>
                     </div>
                     <br/>
                     <br />

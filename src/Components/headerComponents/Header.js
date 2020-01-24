@@ -8,7 +8,7 @@ class Header extends Component {
 
         return (
             <Navbar bg="light" expand="lg" sticky='top'>
-                <Navbar.Brand href="/">Aviation <i class="fas fa-plane-departure"></i></Navbar.Brand>
+                <Navbar.Brand href="/">Aviation <i className="fas fa-plane-departure"></i></Navbar.Brand>
                 <Navbar.Brand>&ensp;Let's get going!</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">

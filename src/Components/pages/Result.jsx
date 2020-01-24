@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './Result.css'
 
 export default class Result extends Component {
     constructor(props) {
         super(props);
-        this.state = { flights: this.props.location.state.flights };
-        console.log(this.state.flights)
+        var p = this.props.location.state.flights.filter((para)=>{
+            return para.destination == this.props.location.state.destFilter;
+        })
+        this.state = { flights: p}
+        console.log(p);
+        console.log(this.state.destFilter);
+        console.log(this.state.flights);
     }
     render() {
         return (
@@ -13,7 +19,7 @@ export default class Result extends Component {
                 <div className='container-fluid res-top-div'>
                     <div className='res-bg-div'>
                         <div className='container res-table-div'>
-                            <table class='table'>
+                            <table className='table'>
                                 <thead>
                                     <tr className='th-cust-div'>
                                         <th scope="col">Origin</th>
@@ -24,6 +30,7 @@ export default class Result extends Component {
                                         <th scope="col">Booking</th>
                                     </tr>
                                 </thead>
+                                <tbody>
                                 {
                                     this.state.flights.slice(0, 15).map((flight) => {
                                         return <tr key={flight.flightcode} className='tr-cust-div'>
@@ -36,6 +43,7 @@ export default class Result extends Component {
                                         </tr>
                                     })
                                 }
+                                </tbody>
                             </table>
                         </div>
                     </div>

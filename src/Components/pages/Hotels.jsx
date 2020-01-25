@@ -19,7 +19,7 @@ export default class Hotels extends Component {
                     </div>
                   </div>
                   <div className="d-flex justify-content-center mt-3">
-                    <button className='btn bg-light btn-outline-info btn-lg' id="buttonSub1">Search Flights!</button>
+                    <button className='btn bg-light btn-outline-info btn-lg' id="buttonSub1">Search Hotels!</button>
                   </div>
                 </form>
                 <br />
